@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family: "Cursive";
+  src: url("augustina.ttf");
+}
+
+
+.parallax {
+    background-image: url("https://cdn.dribbble.com/users/1411973/screenshots/3136818/eye-anim.gif");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: "Cursive";
+}

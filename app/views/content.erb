@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<title> Makeup Quiz </title>
+
+<style>
+    h1{
+        font-family: "Sacramento";
+        background-color: #E3A6FC;
+    }
+    
+    h3{
+        font-family: "Sacramento";
+        background-color: #E3A6FC;
+        font-size: 150%;
+    }
+    
+    label input{
+       font-family: "Sacramento";
+       background-color: #E3A6FC;
+        font-size: 150%;
+     
+    }
+    
+    body{
+        text-align: center;
+        background-color: #E3A6FC;
+    }
+</style>	
+	
+</head>
+
+<body>
+    <!--<div align="center" class = "quiz_box">--> 
+        
+   
+<h1 class = "big"> Welcome to the Face Quiz! </h1>
+<!--put errything in a form-->
+<br>
+<form method="POST" action="/results.erb">
+
+	    
+     <h3>What is your budget?</h3>
+	    <label><input type= "radio" name="Q1" value="Drugstore">Drugstore</label>
+	    <label><input type= "radio" name="Q1" value="Highend">Highend</label>
+	<h3>Select your closest shade.</h3>
+        <label><input type= "radio" name="Q2" value="Light">Light</label>
+        <label><input type= "radio" name="Q2" value="Medium">Medium</label>
+        <label><input type= "radio" name="Q2" value="Dark">Dark</label>
+    <h3>How much coverage would you like to have?</h3>
+        <label><input type= "radio" name="Q3" value="light">light</label>
+        <label><input type= "radio" name="Q3" value="medium">medium</label>
+        <label><input type= "radio" name="Q3" value="full">full</label>
+
+	    <!--have a button here-->
+	    <input type= "submit" value="Submit">
+	    </form>
+	   </body>
+</html>
+
