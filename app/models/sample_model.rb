@@ -1,7 +1,12 @@
 class Colorize
   attr_accessor :params, :lld, :lmd, :lfd, :llh, :lmh, :lfh, :mld, :mmd, :mfd, :mlh, :mmh, :mfh, :dld, :dmd, :dfd, :dlh, :dmh, :dfh
 
+# This first part sets up your counter and calls it results … in your results page you then access this results hash -- have different counters like scottsdale, gluten free, breakfast…...scottsdale, vegan, dinner …. Etc etc.
   def initialize(params)
+  @params=params
+    #instance variable is @ (allows you to do multiple instances aka retake the quiz)
+  
+# If your highest counter = lld, then your results page will print all of these 
     @lld = [{
     title: "Covergirl TruBlend Liquid Foundation",
     link: "https://www.covergirl.com/en_us/beauty-products/face-makeup/foundation-makeup/trublend-matte-made-liquid-foundation",
