@@ -1,6 +1,6 @@
 require 'bundler'
 Bundler.require
-# require_relative 'models/model.rb'
+require_relative '../models/sample_model.rb'
 # require_relative 'models/ny_data_model.rb'
 class ApplicationController < Sinatra::Base
   
@@ -26,12 +26,8 @@ class ApplicationController < Sinatra::Base
 #     erb :results
 #   end
 
-  post '/results.erb' do
-    p params
-    person = Project.new(params)
-    @answer = person.final_results
-    p @answer
-    @final_array = person.get_results(@answer)
+  post '/results' do
+    @item = colorize(params[:Q2], params[:Q3], params[:Q1])
     erb :results
   end
 end
